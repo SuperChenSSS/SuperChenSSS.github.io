@@ -6,14 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://SuperChenSSS.github.io">
-  <title>Tag: shanghai | Dream Home</title>
+  <title>[科普向]利用工具简单分析BT资源分布 | Dream Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Dream Home">
-<meta property="og:url" content="https://SuperChenSSS.github.io/tags/shanghai/index.html">
+  <meta name="description" content="各位久等了！因为各种不可抗拒因素 (懒) 博客很久很久很久没有更新了，所以今天怒更一波！这是一篇科普向的分析贴，但也是非常简单的一个实验。希望大家看完能有一个简单的隐私感受。">
+<meta name="keywords" content="think,fun,shanghai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[科普向]利用工具简单分析BT资源分布">
+<meta property="og:url" content="https://SuperChenSSS.github.io/2020/04/29/BT/index.html">
 <meta property="og:site_name" content="Dream Home">
+<meta property="og:description" content="各位久等了！因为各种不可抗拒因素 (懒) 博客很久很久很久没有更新了，所以今天怒更一波！这是一篇科普向的分析贴，但也是非常简单的一个实验。希望大家看完能有一个简单的隐私感受。">
+<meta property="og:image" content="https://geek.run-linux.com/2020-04-29-035750.png">
+<meta property="og:image" content="https://geek.run-linux.com/2020-04-29-035816.png">
+<meta property="og:image" content="https://geek.run-linux.com/2020-04-29-035830.png">
+<meta property="og:updated_time" content="2020-04-29T04:45:32.896Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dream Home">
+<meta name="twitter:title" content="[科普向]利用工具简单分析BT资源分布">
+<meta name="twitter:description" content="各位久等了！因为各种不可抗拒因素 (懒) 博客很久很久很久没有更新了，所以今天怒更一波！这是一篇科普向的分析贴，但也是非常简单的一个实验。希望大家看完能有一个简单的隐私感受。">
+<meta name="twitter:image" content="https://geek.run-linux.com/2020-04-29-035750.png">
   
     <link rel="alternative" href="/atom.xml" title="Dream Home" type="application/atom+xml">
   
@@ -172,36 +181,51 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-BT" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/29/BT/" class="archive-article-date">
-  	<time datetime="2020-04-29T03:55:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/29/BT/">[科普向]利用工具简单分析BT资源分布</a>
+    <h1 class="article-title" itemprop="name">
+      [科普向]利用工具简单分析BT资源分布
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/04/29/BT/" class="archive-article-date">
+  	<time datetime="2020-04-29T03:55:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>各位久等了！因为各种不可抗拒因素 <del>(懒)</del> 博客<em>很久很久很久</em>没有更新了，所以今天怒更一波！这是一篇科普向的分析贴，但也是非常简单的一个实验。希望大家看完能有一个简单的隐私感受。</p>
+<a id="more"></a>
+<p>【写在前面】<br>文章用到的所有网站均为第三方，仅做简单分析实验之用，请不要用于其他用途。同时，我也不会分享任何分析数据/材料/网址信息。</p>
+<p>【起因】<br>今天临睡前，刷到了一条朋友圈，看到了一个科技新闻报道了如何利用bt扫描快速获取你下载资源的类型，网址在这篇文章中不会列出，还可以查看临近IP的下载浏览记录。于是，我冒出了一个想法：由于临近IP一般位于附近地区，能否利用这个特性来分析附近人所用BT的大致意图呢？抱着这样一个观点，我开始了实验。</p>
+<p>【实验开始】<br>首先，访问网站，他会自动扫描你的IP并进行BT查找，并列出所有你用BT下载的内容信息：<br> <img src="https://geek.run-linux.com/2020-04-29-035750.png" alt="图片"><br>其中，白色为普通资源，通常为正常合集等；红色为敏感资源。这里我在网站上查找到的和我日常下载的是完全对应的。<br>由于BT资源在下载时同时也会分享资源加速其他的下载者，因而互联网可以轻易通过IP找到你正在下载的内容，并进行监控，所以只要拥有了你的IP信息，可以很快查到下载信息。<br>接着，我们扩大范围到附近的IP，这里我通过了人为选取，可以快速查看附近的下载信息：<br> <img src="https://geek.run-linux.com/2020-04-29-035816.png" alt="图片"><br> 随机选取多组后，发现：</p>
+<ol>
+<li>大部分BT资源为敏感or盗版资源，大部分BT资源均属于黑色地带</li>
+<li>迅雷分享痕迹严重，通过点开链接可以发现迅雷对于分享的隐私保护很少</li>
+<li>相邻IP的本土化资源较多，切换IP后也能发现不同地区附近的资源类型也有很大差别：<br>从国家划分，我们与🇯🇵资源类型类似；🇺🇸与欧洲(俄罗斯)资源类型类似<br>大部分下载4K资源的集中在韩国/美国/俄罗斯<br>该网站还会根据titlle/后缀名分型大致的类型，并根据IP进行区域划分：<br> <img src="https://geek.run-linux.com/2020-04-29-035830.png" alt="图片"></li>
+</ol>
+<p>【总结】<br>基于以上，我想最终传达的是：</p>
+<ol>
+<li>BT资源是基于P2P进行的一种技术。在你下载一些资源的过程中（例如迅雷）它在方便你的同时，也会在英特网中暴露很多你的个人隐私信息，所以最好的方法就是：少用或者不用</li>
+<li>在实验中，我还测试了百度网盘，可喜的是该网站并不能检测出网盘的使用记录等，甚至当用户体验计划打开的时候也不会，说明至少对于隐私而言，网盘还是不错的。</li>
+<li>现在利用IP进行身份识别已经是很简单的事情，所以我们在网上的一言一行都要更加小心。如果真正要对一个用户展开研究的话，通过很简单的一些办法就能知道你的信息。</li>
+</ol>
+<p>最后的最后，希望大家能看到这篇博客。大部分内容我还是通过手动点击的，如果做成爬虫那分分钟就可以开始数据挖掘/大数据了。Privacy Matters!</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -221,19 +245,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://SuperChenSSS.github.io/2020/04/29/BT/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/04/21/xbox/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Work Hard, Play Hard</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -257,9 +368,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -516,17 +627,6 @@ MathJax.Hub.Queue(function() {
             </button>
 
             <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-  </div>
-</body>
-</html>>
                 <div class="pswp__caption__center"></div>
             </div>
 
